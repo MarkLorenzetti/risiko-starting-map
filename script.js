@@ -1,7 +1,3 @@
-
-//"NAME": "Afghanistan", "AREA": "65209", "POP2005": "25067407" }
-// data["id"] === 156 ? data["properties"]["REGION"] = "Russia" : ""
-
 const url = "./world/world-population.geo.json"
 const map = L.map('map').setView([43.8794095, 10.5858792], 2);
 
@@ -70,8 +66,8 @@ dataGeo()
                 //more info: https://leafletjs.com/reference.html#bounds
                 data.properties.bounds = layer.getBounds(),
                 layer.addEventListener("click", function(e){
-                    //The bounds representing Alaska are not contiguous to the onces
-                    //representing the rest of country overvalueing its final bound.
+                    //The bounds representing Alaska are not contiguous to those onces
+                    //representing the rest of country, overvaluing its final bound.
                     if(data.id === 198){
                         const usaNorthEast = L.latLng(48.951366470947725, -122.62939453125001)
                         const usaSouthWest = L.latLng(25.24469595130604, -80.44189453125001)
