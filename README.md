@@ -1,2 +1,2 @@
 # risiko-starting-map
-This is the a Risiko game basic configuration for browser 
+This is a Risiko game basic configuration for browser 
